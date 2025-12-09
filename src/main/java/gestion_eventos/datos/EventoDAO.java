@@ -168,11 +168,11 @@ public class EventoDAO implements IEventoDAO{
         return false;
     }
 
-    public static void main(String[] args) {
-        IEventoDAO eventoDAO = new EventoDAO();
-        System.out.println("*** Listar ***");
-        var listar = eventoDAO.listarEventos();
-        listar.forEach(System.out::println);
+//    public static void main(String[] args) {
+//        IEventoDAO eventoDAO = new EventoDAO();
+//        System.out.println("*** Listar ***");
+//        var listar = eventoDAO.listarEventos();
+//        listar.forEach(System.out::println);
 
 //        System.out.println("*** Buscar ***");
 //        var buscar = new Evento(1);
@@ -183,15 +183,15 @@ public class EventoDAO implements IEventoDAO{
 //        else{
 //            System.out.println("Evento No encontrado: " + buscar);
 //        }
-        System.out.println("*** Eliminar ***");
-        LocalDate fecha = LocalDate.of(2025, 11, 9);
-        var eliminar = new Evento(2);
-        var eliminado = eventoDAO.eliminarEvento(eliminar);
-        if(eliminado){
-            System.out.println("Evento eliminado: " + eliminar);
-        }
-        else{
-            System.out.println("Evento No eliminado: " + eliminar);
-        }
-    }
+//        System.out.println("*** Eliminar ***");
+//        LocalDate fecha = LocalDate.of(2025, 11, 9);
+//        var eliminar = new Evento(2);
+//        var eliminado = eventoDAO.eliminarEvento(eliminar);
+//        if(eliminado){
+//            System.out.println("Evento eliminado: " + eliminar);
+//        }
+//        else{
+//            System.out.println("Evento No eliminado: " + eliminar);
+//        }
+//    }
 }
